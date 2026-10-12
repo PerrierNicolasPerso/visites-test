@@ -21,3 +21,4 @@ def test_metrics_counts_requests(client):
     body = client.get("/metrics").text
     assert 'http_requests_total{method="GET",path="/",status="200"}' in body
     assert "http_request_duration_seconds" in body
+#Test
